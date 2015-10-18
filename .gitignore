@@ -4,7 +4,7 @@ node_modules/
 platforms/
 plugins/
 resources/
-www/lib
+www/lib/bower_components
 *.swp
 *.swo
 *.log
