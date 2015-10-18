@@ -1,0 +1,36 @@
+<ion-view hide-back-button="true">
+	<ion-nav-title>
+		{{navTitle}}
+	</ion-nav-title>
+	</ion-nav-bar>
+	<ion-content class="ahjo-bg has-header">
+		<ion-list>      
+			<div class="card ahjo-cardspacing">
+				<label class="item item-input item-select item-divider ">
+					<div class="input-label">
+						Rajaus: {{filterData.filterSelect}}
+					</div>
+					<select name='filterSelect' id='filterSelect' ng-model="filterData.filterSelect">
+						<option ng-repeat="f in filterData.filterOpts" value="{{f.id}}">{{f.name}}</option>
+					</select>
+				</label>
+				<!--
+				<div class="item item-divider item-text-wrap ahjoissue-cardspacing">
+					{{txtLatest}}
+				</div>
+				-->
+				<!--
+				<div class="text-center" ng-if="loading">
+					<ion-spinner icon="lines" class="has-header">
+					</ion-spinner>
+				</div>
+				-->
+				<ion-item ng-repeat="i in meetings" class="item-text-wrap ahjoitem">
+					<div ng-click="openMeeting(i.id, i.policymaker_name)">
+						{{i.date}} | {{i.policymaker_name}}
+					</div>
+				</ion-item> 
+			</div
+		</ion-list>        
+	</ion-content>
+</ion-view>

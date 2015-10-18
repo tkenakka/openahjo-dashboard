@@ -1,0 +1,25 @@
+<ion-view>
+	<ion-nav-title>
+		{{navTitle}} <!-- TODO: check for SCA -->
+	</ion-nav-title>
+	<ion-content class="ahjo-bg">
+    	<ion-list>
+			<div class="card ahjo-cardspacing">
+				<div class="item item-divider item-text-wrap ahjoissue-cardspacing">
+					{{cardTitle}}
+				</div>
+				<!--
+				<div class="text-center" ng-if="loading">
+					<ion-spinner icon="lines" class="has-header">
+					</ion-spinner>
+				</div>
+				-->
+		        <ion-item ng-repeat="i in items track by i.id" class="item-text-wrap ahjoitem"  ng-if="!loading">
+		        	<div ng-click="openIssue(i)">
+		        		{{i.subject}}
+		        	</div>
+		        </ion-item> 
+	    	</div>
+      	</ion-list>
+	</ion-content>
+</ion-view>

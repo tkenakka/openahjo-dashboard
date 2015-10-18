@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html data-ng-csp>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' http://dev.hel.fi/*">
+
+    <meta http-equiv="Content-Security-Policy"
+              content="default-src *;
+                   script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                              127.0.0.1:*
+                              localhost:*
+                              http://dev.hel.fi
+                               ;
+                   style-src  'self' 'unsafe-inline'
+                              127.0.0.1
+                              localhost:*
+                              http://dev.hel.fi
+    ">
+    -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' * ws://localhost:* data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *;script-src 'self' localhost:* 'unsafe-eval' 'unsafe-inline';">
+    <title>Dashboard for Open Ahjo</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="lib/bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="lib/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="lib/ionic/js/angular/angular-resource.js"></script>
+
+    <script src="lib/bower_components/pdfjs-dist/build/pdf.js"></script>
+    <script src="lib/bower_components/angular/angular.js"></script>
+    <script src="lib/bower_components/angular-pdf-viewer/dist/angular-pdf-viewer.min.js"></script>
+    <script src="lib/bower_components/ng-pdfviewer/ng-pdfviewer.js"></script>
+
+
+    <!-- Patches -->
+    <script src="js/patches/angular-ios9-uiwebview.patch.js"></script> <!-- Patch to Angular 1.2.0 – 1.4.5. Newer versions have it already -->
+    <!-- Application files -->
+    <script src="js/app.config.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/app.routes.js"></script>
+    <script src="js/services/fileHistory.service.js"></script>
+    <script src="js/controllers/menu.ctrl.js"></script>
+    <script src="js/controllers/meetingslist.ctrl.js"></script>
+    <script src="js/controllers/meeting.ctrl.js"></script>
+    <script src="js/controllers/issue.ctrl.js"></script>
+    <script src="js/controllers/process.ctrl.js"></script>
+    <script src="js/controllers/pdfview.ctrl.js"></script>
+    <script src="js/controllers/pdfview2.ctrl.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/meetingsapi.service.js"></script>
+    <script src="js/services/ahjoapi.service.js"></script>
+    <script src="js/services/mtgagendascache.service.js"></script>
+    <script src="js/services/ExceptionDecoService.js"></script>
+
+
+  </head>
+  <body ng-app="app.module">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

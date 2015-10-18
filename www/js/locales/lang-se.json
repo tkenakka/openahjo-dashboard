@@ -1,0 +1,13 @@
+{
+	"SIDEMENU_TITLE":					"*se*Navigation",
+	"SIDEMENU_ITEM_MAIN":				"*se*Frontsidan",
+	"SIDEMENU_ITEM_DECISIONPROCESS":	"*se*Päätöksenteko",
+	"SIDEMENU_ITEM_MEETINGS":			"*se*Möter",
+	"LATEST":							"*se*Senaste",
+	"ISSUES":							"*se*Saker",
+	"ISSUE":							"*se*Saken",
+	"ATTACHMENTS":						"*se*Liitteet",
+	"DECISION":							"*se*Päätös",
+	"DOCNOTPUBLIC":						"*se*Ei-julkinen",
+	"FILEHISTORY_TITLE":				"*se*Dokumenttihistoria"
+}

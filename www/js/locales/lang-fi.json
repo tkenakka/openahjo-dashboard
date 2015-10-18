@@ -1,0 +1,13 @@
+{
+	"SIDEMENU_TITLE":					"Navigointi",
+	"SIDEMENU_ITEM_MAIN":				"Etusivu",
+	"SIDEMENU_ITEM_DECISIONPROCESS":	"Päätöksenteko",
+	"SIDEMENU_ITEM_MEETINGS":			"Kokoukset",
+	"LATEST":							"Viimeisimmät",
+	"ISSUES":							"Kokouksen asiat",
+	"ISSUE":							"Asia",
+	"ATTACHMENTS":						"Liitteet",
+	"DECISION":							"Päätös",
+	"DOCNOTPUBLIC":						"Ei-julkinen",
+	"FILEHISTORY_TITLE":				"Dokumenttihistoria"
+}

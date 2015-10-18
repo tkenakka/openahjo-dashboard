@@ -1,0 +1,15 @@
+<ion-view>
+	<ion-nav-title>
+		{{navTitle}}
+	</ion-nav-title>
+	<ion-content>
+	<!-- $ bower install ng-pdfviewer # https://github.com/akrennmair/ng-pdfviewer -->
+<button ng-click="prevPage()">&lt;</button>
+<button ng-click="nextPage()">&gt;</button>
+<br>
+<span>{{currentPage}}/{{totalPages}}</span>
+<br>
+<pdfviewer src='http://dev.hel.fi/paatokset/media/att/12/12afbf6863d60abf5367ad7194fcd3684873e802.pdf' on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,85 @@
+/* Empty. Add your own CSS if you like */
+.img-resp{
+	max-width: 100%;
+	max-height: 100%;
+	padding: 10px 10px 10px 10px;
+}
+
+.bar-ahjo {
+	background-color: #0072c6; /*rgb(0, 114, 198) #0072c6*/
+}
+
+.ahjoitem {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.ahjo-carditem {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	/*padding-left: 12px;
+	padding-right: 12px;*/
+}
+
+.ahjo-listicon {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.ahjoissue-cardspacing {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.ahjoissue h1, h2, h3 {
+	padding-top: 7px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.ahjoissue p, ol, ul, li {
+	font-size: 14px;
+	color: #444;
+}
+
+.ahjoissue h3 {
+	font-size: 14px;
+}
+
+.ahjo-view {
+	margin-left: 10px;
+	/*background-color: #0072c6;
+	color: transparent;*/
+}
+
+.ahjo-bg {
+  background: url('../img/background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.centerthis {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*TODO: check this once more*/
+/*
+ * Fixes an iOS view transition glitch:; half of old view remains visible etc.
+ * https://github.com/driftyco/ionic/issues/3416
+ */
+[nav-view-transition="ios"] {
+  [nav-view] {
+    box-shadow: none !important;
+  }
+[nav-view="entering"], [nav-view="leaving"] {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+  }
+}
+

@@ -1,0 +1,53 @@
+<ion-view>
+	<ion-nav-title>
+		{{navTitle}} <!-- TODO: check for SCA -->
+	</ion-nav-title>
+	<ion-content class="ahjo-bg">
+		<ion-list>
+			<div class="card">
+				<div class="item item-divider item-text-wrap ahjoissue-cardspacing" ng-if="!loading">
+					{{txtCardTitle}}
+				</div>
+				<!--
+				<div class="text-center" ng-if="loading">
+					<ion-spinner icon="lines" class="has-header">
+					</ion-spinner>
+				</div>
+				-->
+				<div class="item item-divider item-text-wrap ahjoissue-cardspacing" ng-if="!loading">
+					<div ng-click="toggleAttachments()">
+						<i class="icon ion-minus ahjo-listicon" ng-show="showAttachments"></i>
+						<i class="icon ion-plus ahjo-listicon" ng-show="!showAttachments"></i>
+						{{txtAttachments}}
+					</div>
+				</div>
+				<div class="item item-text-wrap ahjoissue ahjo-cardspacing" ng-show="showAttachments">
+					<div ng-repeat="i in attachments" ng-show="showAttachments" class="item-text-wrap ahjo-carditem">
+						<div ng-if="!(i.public==true)">
+							<i class="icon ion-eye-disabled ahjo-listicon"></i>{{txtDocNotPublic}}
+						</div>
+						<div ng-if="i.public">
+							<i class="icon ion-document ahjo-listicon"></i>
+							<u ng-click="openDoc(i.file_uri, i.name, i.file_type)">{{i.name}} {{i.file_type}}</u>
+						</div>
+					</div>
+				</div>
+				<div class="item item-divider item-text-wrap ahjoissue-cardspacing" ng-if="!loading">
+					<div ng-click="toggleDecision()" >
+						<i class="icon ion-minus ahjo-listicon" ng-show="showDecision"></i>
+						<i class="icon ion-plus ahjo-listicon" ng-show="!showDecision"></i>
+						{{txtDecision}}
+					</div>
+				</div>
+
+				<div class="item item-text-wrap ahjoissue ahjo-cardspacing" ng-show="showDecision">
+					<div ng-repeat="i in issue" ng-bind-html="i.text">
+				</div>
+			</div>
+		<!-- footer TODO: remove?
+		<div class="item item-divider">
+		</div>
+		-->
+		</ion-list>
+	</ion-content>
+</ion-view>
