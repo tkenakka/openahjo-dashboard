@@ -6,6 +6,9 @@
   },
   "dependencies": {
     "angular-translate": "~2.7.2",
-    "angular-translate-loader-static-files": "~2.7.2"
+    "angular-translate-loader-static-files": "~2.7.2",
+    "pdfjs-dist": "~1.1.534",
+    "ng-pdfviewer": "~0.2.1",
+    "angular-pdf-viewer": "~0.2.9"
   }
 }
